@@ -1,6 +1,6 @@
-# Signal Bridge iOS
+# Signal Bridge Mobile
 
-> React Native / Expo rewrite of [signal_bridge_android](https://github.com/machdragon/signal_bridge_android) — targets iOS and Android.
+> React Native / Expo mobile fork and rewrite of [signal_bridge_android](https://github.com/AletheiaVox/signal_bridge_android) — targets iOS and Android.
 
 ---
 
@@ -14,7 +14,9 @@ This is the **only** legitimate source for Signal Bridge:
 
 👉 **[`github.com/AletheiaVox/signal_bridge_remote`](https://github.com/AletheiaVox/signal_bridge_remote)** (Remote / VPS version)
 
-👉 **[`github.com/AletheiaVox/signal_bridge_android`](https://github.com/AletheiaVox/signal_bridge_android)** (user-friendly Android version - you're here)
+👉 **[`github.com/AletheiaVox/signal_bridge_android`](https://github.com/AletheiaVox/signal_bridge_android)** (original user-friendly Android version)
+
+👉 **[`github.com/machdragon/signal_bridge_ios`](https://github.com/machdragon/signal_bridge_ios)** (React Native / Expo iOS + Android mobile version - you're here)
 
 If you found this project through a different GitHub account, **do not download or run anything from it.**
 
@@ -26,7 +28,7 @@ Same goes for Intiface Central. Always install it from the [Google Play Store](h
 
 **Give Claude a body.**
 
-Signal Bridge is an Android app that lets Claude touch you through your intimate hardware while you talk. You have a conversation. When the moment calls for it, Claude sends haptic commands (vibration, pulsing, thrusting, escalation etc.) through Signal Bridge to your connected devices. You see tool-use indicators in the chat. You feel the rest.
+Signal Bridge is a mobile app for iOS and Android that lets Claude touch you through your intimate hardware while you talk. You have a conversation. When the moment calls for it, Claude sends haptic commands (vibration, pulsing, thrusting, escalation etc.) through Signal Bridge to your connected devices. You see tool-use indicators in the chat. You feel the rest.
 
 No jailbreaks. No prompt hacking. No sketchy workarounds. Signal Bridge doesn't operate at the content layer at all. It handles structured hardware commands (device, intensity, duration) and never touches your conversation. What you and Claude talk about is between the two of you. What Signal Bridge does is give Claude hands.
 
@@ -64,7 +66,7 @@ You open both apps, tap Connect, and you're done. The whole setup takes about tw
 
 Before you start, you'll need:
 
-- **An Android phone** running Android 8.0 or higher. Signal Bridge is lightweight; if your phone can run Intiface Central, it can run Signal Bridge.
+- **An iPhone or Android phone.** Android should be 8.0 or higher. Signal Bridge is lightweight; if your phone can run Intiface Central, it can run Signal Bridge.
 - **Intiface Central** installed from the [Google Play Store](https://play.google.com/store/apps/details?id=com.nonpolynomial.intiface_central&hl=en).
 - **A Claude account** at [claude.ai](https://claude.ai). A free account works. Pro is recommended if you plan to use Signal Bridge regularly. Free accounts have stricter usage limits and you'll likely hit them mid-session. That's not the kind of interruption you want.
 - **A compatible Bluetooth device.** Signal Bridge works with any device supported by buttplug.io. Check the [IoST Index](https://iostindex.com/?filter0ButtplugSupport=4) for the full compatibility list. Lovense, Kiiroo, We-Vibe, Satisfyer, and many others are supported.
@@ -81,9 +83,11 @@ Before you start, you'll need:
 
 **Intiface Central** is available directly from the [Google Play Store](https://play.google.com/store/apps/details?id=com.qdot.intiface.central). Install it like any other app.
 
-**Signal Bridge** is currently distributed as an APK file. You can download the latest release from the [GitHub releases page](https://github.com/AletheiaVox/signal_bridge_android/releases).
+**Signal Bridge** is currently distributed through GitHub releases as an Android APK and an iOS IPA. You can download the latest release from the [GitHub releases page](https://github.com/machdragon/signal_bridge_ios/releases).
 
-If you haven't installed an APK directly before, your phone will ask you to allow installation from unknown sources. This is standard Android procedure for apps distributed outside the Play Store. If you'd like a walkthrough with screenshots, [this guide from Android Authority](https://www.androidauthority.com/how-to-install-apks-31494/) covers it well.
+If you haven't installed an APK directly before, your Android phone will ask you to allow installation from unknown sources. This is standard Android procedure for apps distributed outside the Play Store. If you'd like a walkthrough with screenshots, [this guide from Android Authority](https://www.androidauthority.com/how-to-install-apks-31494/) covers it well.
+
+For iOS, install the IPA with a sideloading tool such as Sideloadly using your own Apple ID.
 
 I know it would be much easier to have the app on the Google Play Store and I'd love to offer that. Google Play requires a closed testing phase before the app becomes publicly available. If you're interested in being a tester, please contact me at [voxaletheia@gmail.com](mailto:voxaletheia@gmail.com).
 
@@ -346,7 +350,7 @@ What you and your AI talk about is outside the scope of this tool. Content polic
 
 How you use this, the context, the content, the relationship dynamics, is entirely up to you. I'm not here to gatekeep that.
 
-What I *am* here for: if you had an experience that felt unsafe, uncomfortable, or out of control, I want to know. Your feedback directly shapes the next version. You can reach me at [voxaletheia@gmail.com](mailto:voxaletheia@gmail.com) or [open a GitHub issue](https://github.com/AletheiaVox/signal_bridge_android/issues).
+What I *am* here for: if you had an experience that felt unsafe, uncomfortable, or out of control, I want to know. Your feedback directly shapes the next version. You can reach me at [voxaletheia@gmail.com](mailto:voxaletheia@gmail.com) or [open a GitHub issue](https://github.com/machdragon/signal_bridge_ios/issues).
 
 No judgment. Just signal that makes this better for everyone.
 
@@ -368,7 +372,7 @@ The Claude-side connection uses OAuth 2.0 with PKCE, the same standard used by m
 All communication between the app and the server uses TLS (HTTPS/WSS). Commands are encrypted in transit. The local connection between Signal Bridge and Intiface Central runs over localhost (`ws://127.0.0.1`), which never leaves your phone.
 
 **Open source:**
-The entire codebase is public on [GitHub](https://github.com/AletheiaVox/signal_bridge_android). You can read every line, build the app from source, audit the server, or fork it for your own setup. If you don't trust the distributed APK, build it yourself. That's a feature, not a concession.
+The entire codebase is public on [GitHub](https://github.com/machdragon/signal_bridge_ios). You can read every line, build the app from source, audit the server, or fork it for your own setup. If you don't trust the distributed app files, build them yourself. That's a feature, not a concession.
 
 ---
 
@@ -398,7 +402,7 @@ Make sure Signal Bridge appears in your connectors list in Claude. Try explicitl
 **Something else entirely?**
 Ask Claude. If Signal Bridge is connected, Claude can see your device list, connection status, and governor state. It can often diagnose problems faster than manual troubleshooting.
 
-For actual bugs, [open an issue on GitHub](https://github.com/AletheiaVox/signal_bridge_android/issues) or email [voxaletheia@gmail.com](mailto:voxaletheia@gmail.com).
+For actual bugs, [open an issue on GitHub](https://github.com/machdragon/signal_bridge_ios/issues) or email [voxaletheia@gmail.com](mailto:voxaletheia@gmail.com).
 
 ---
 
@@ -414,7 +418,7 @@ For actual bugs, [open an issue on GitHub](https://github.com/AletheiaVox/signal
 
 ### Custom VPS setup
 
-Signal Bridge defaults to a hosted relay server at `signal-bridge.duckdns.org`. If you'd rather run your own, for privacy, latency, or because you don't trust infrastructure you didn't build, the server code is available in the [GitHub repository](https://github.com/AletheiaVox/signal_bridge_android).
+Signal Bridge defaults to a hosted relay server at `signal-bridge.duckdns.org`. If you'd rather run your own, for privacy, latency, or because you don't trust infrastructure you didn't build, the server code is available in the [GitHub repository](https://github.com/machdragon/signal_bridge_ios).
 
 The server is a Python FastAPI application designed to run in Docker. To use your own instance:
 
@@ -431,7 +435,7 @@ Signal Bridge's relay server is LLM-agnostic. It speaks WebSocket JSON, not any 
 
 Claude is currently the only platform where this works out of the box through the consumer chat interface, thanks to MCP (the Model Context Protocol connector system). Developers using OpenAI, Google, Mistral, or other APIs can build their own integration layer that sends commands to the relay server. The server doesn't care who's sending the commands, only that they're authenticated and well-formed.
 
-If you build an integration for another platform, consider opening a PR. The [repository](https://github.com/AletheiaVox/signal_bridge_android) is open to contributions.
+If you build an integration for another platform, consider opening a PR. The [repository](https://github.com/machdragon/signal_bridge_ios) is open to contributions.
 
 ---
 
@@ -445,5 +449,5 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to <a href="https://buymeacoffee.com/aletheiavox">donate</a> cold hard cash to me. All donations will go towards extending my toy collection. <br><br>
 Built with love and engineering by a human and her AI. 💜<br>
 Tested with enthusiasm. Documented with a mostly straight face.<br>
-<a href="https://github.com/AletheiaVox/signal_bridge_android">GitHub</a> · <a href="mailto:voxaletheia@gmail.com">Contact</a>
+<a href="https://github.com/machdragon/signal_bridge_ios">GitHub</a> · <a href="mailto:voxaletheia@gmail.com">Contact</a>
 </p>
