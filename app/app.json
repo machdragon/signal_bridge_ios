@@ -24,7 +24,7 @@
       "package": "com.aletheiaVox.signalbridge",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#121212"
+        "backgroundColor": "#EF3030"
       },
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
