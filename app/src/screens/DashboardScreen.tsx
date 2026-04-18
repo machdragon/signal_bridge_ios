@@ -184,14 +184,6 @@ export function DashboardScreen() {
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
 
-        {Platform.OS === 'ios' && isConnected && (
-          <View style={styles.iosBanner}>
-            <Text style={styles.iosBannerText}>
-              Keep app in foreground — relay stops if backgrounded
-            </Text>
-          </View>
-        )}
-
         <View style={styles.statusRow}>
           <StatusCard
             label="Server"
@@ -368,15 +360,6 @@ const styles = StyleSheet.create({
   headerTitle: { fontSize: 22, fontWeight: 'bold', color: T.text },
   scroll: { flex: 1 },
   scrollContent: { padding: 16, paddingBottom: 8 },
-  iosBanner: {
-    backgroundColor: '#FFF8E1',
-    borderRadius: 8,
-    padding: 12,
-    marginBottom: 12,
-    borderWidth: 1,
-    borderColor: T.amber,
-  },
-  iosBannerText: { color: T.amber, fontSize: 13 },
   statusRow: { flexDirection: 'row', gap: 8, marginBottom: 12 },
   stateText: { fontSize: 17, fontWeight: '600', marginBottom: 8 },
   errorCard: {

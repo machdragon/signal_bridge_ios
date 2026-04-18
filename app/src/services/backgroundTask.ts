@@ -2,8 +2,9 @@
  * Background task registration for Android.
  *
  * Android: expo-task-manager + expo-background-fetch keeps the relay alive.
- * iOS: no persistent background relay possible; RelayEngine handles backgrounding
- *      via AppState listener (see RelayEngine.ts).
+ * iOS: background-fetch is not used; persistent relay is maintained via the VoIP
+ *      keep-alive callback (~600s interval) registered in VoIPKeepAlive.swift.
+ *      RelayEngine also listens to AppState for foreground reconnection (see RelayEngine.ts).
  *
  * NOTE: On Android, this task fires at most every ~15 minutes by the OS.
  *       The foreground RelayEngine handles real-time relay; this is a recovery
