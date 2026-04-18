@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+.gradle/
+.kotlin/
+app/release/
+app/android/build/
+app/android/.cxx/
+app/android/.gradle/
+*.apk
+*.aab
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Signing
+keystore.jks
+*.jks
+keystore.properties
+
+# Local configuration
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Expo runtime cache
+app/.expo/web/
+app/.expo/devices.json
+app/.expo/README.md
+
+# Screenshots and session notes at repo root (root-level only)
+/*.png
+/*.jpg
+/session-*.md

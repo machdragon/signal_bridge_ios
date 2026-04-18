@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Signal Bridge",
+    "slug": "signal-bridge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.aletheiaVox.signalbridge",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification", "voip"],
+        "NSLocalNetworkUsageDescription": "Signal Bridge connects to Intiface Central running on this device over the local network."
+      }
+    },
+    "android": {
+      "package": "com.aletheiaVox.signalbridge",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#121212"
+      },
+      "permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.INTERNET",
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
+      ]
+    },
+    "plugins": [
+      ["expo-notifications", { "sounds": [] }],
+      "expo-secure-store"
+    ]
+  }
+}

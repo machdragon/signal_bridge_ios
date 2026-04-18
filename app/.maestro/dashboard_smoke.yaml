@@ -1,0 +1,10 @@
+appId: com.aletheiaVox.signalbridge
+---
+- launchApp
+- assertVisible: "Signal Bridge"
+- assertVisible: "Connect"
+- tapOn: "⚙"
+- assertVisible: "Server URL"
+- tapOn:
+    id: "back"
+    optional: true
