@@ -26,7 +26,7 @@
 		7DBFC6DEFA096730256312AF /* Pods-SignalBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalBridge.release.xcconfig"; path = "Target Support Files/Pods-SignalBridge/Pods-SignalBridge.release.xcconfig"; sourceTree = "<group>"; };
 		84A811A2F6784FEB88BAFD8F /* VoIPKeepAlive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VoIPKeepAlive.swift; path = SignalBridge/VoIPKeepAlive.swift; sourceTree = "<group>"; };
 		8835676B87F196FB1CCB94E2 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-SignalBridge/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		A1248FFAABDC70813AA65E9B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = SignalBridge/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A1248FFAABDC70813AA65E9B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = SignalBridge/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = SignalBridge/SplashScreen.storyboard; sourceTree = "<group>"; };
 		B49769C9CDA24752A9C02318 /* VoIPKeepAlive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VoIPKeepAlive.m; path = SignalBridge/VoIPKeepAlive.m; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 				E4588C484E3A5C9B9CA41511 /* Pods-SignalBridge.debug.xcconfig */,
 				7DBFC6DEFA096730256312AF /* Pods-SignalBridge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
